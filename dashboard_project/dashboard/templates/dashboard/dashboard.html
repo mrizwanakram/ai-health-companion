@@ -1,0 +1,57 @@
+<!-- dashboard/templates/dashboard/dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .metrics, .insights {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .metric, .insight {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard</h1>
+
+        <div class="metrics">
+            <h2>Metrics</h2>
+            {% for metric in metrics %}
+                <div class="metric">
+                    <strong>{{ metric.name }}:</strong> {{ metric.value }} ({{ metric.timestamp }})
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="insights">
+            <h2>Insights</h2>
+            {% for insight in insights %}
+                <div class="insight">
+                    <strong>Insight for {{ insight.metric.name }}:</strong> {{ insight.insight_text }} ({{ insight.created_at }})
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
