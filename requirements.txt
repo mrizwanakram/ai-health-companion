@@ -1,0 +1,9 @@
+transformers
+torch
+pandas
+requests
+flask
+dash
+pandas
+django
+djangorestframework
