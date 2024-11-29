@@ -27,42 +27,8 @@ The Mind-Body Connection Dashboard is a comprehensive tool designed to aggregate
    - **Insights Aggregation** (`insights/aggregation.py`): Combines the outputs of the fitness, sleep, and sentiment agents into a single set of insights, including personalized suggestions.
    - **Dashboard** (`dashboard/dashboard.py`): The central component that integrates the insights and displays them in a Streamlit dashboard. This also includes custom styling to ensure a visually appealing and interactive user experience.
 
-### 3. **Flow Diagram**
 
-               +-------------------+
-               |  Fitness Agent    |  
-               |  (Processes data  | 
-               |  from fitness.json)|
-               +--------+----------+
-                        |
-               +--------v----------+
-               |  Sleep Agent      | 
-               |  (Analyzes sleep  |
-               |  data from sleep.json) |
-               +--------+----------+
-                        |
-               +--------v----------+
-               | Sentiment Agent   |
-               | (Analyzes journal |
-               | entries for sentiment)|
-               +--------+----------+
-                        |
-               +--------v----------+
-               | Aggregated Insights|
-               | (Combines fitness, |
-               | sleep, and sentiment|
-               | data into a unified |
-               | dashboard)         |
-               +--------+----------+
-                        |
-               +--------v----------+
-               |  Streamlit        |
-               |  (Dashboard for   |
-               |  visualizing data)|
-               +-------------------+
-```
-
-### 4. **Technologies Used**
+### 3. **Technologies Used**
 
 - **Python 3.x**: The primary programming language.
 - **Streamlit**: Used for building the interactive dashboard.
