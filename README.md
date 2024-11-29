@@ -4,7 +4,7 @@
 
 Below is the UI diagram representing the user dashboard of the Mind-Body Connection Dashboard. It shows the interactive elements and how users will engage with the system.
 
-![User Dashboard](docs/User%20Dashboard.png)
+![User Dashboard](Dashboard.png)
 
 ## Overview
 A dashboard integrating fitness, sleep, and journaling data to provide actionable insights into physical and mental well-being.
