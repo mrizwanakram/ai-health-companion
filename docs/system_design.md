@@ -29,7 +29,6 @@ The Mind-Body Connection Dashboard is a comprehensive tool designed to aggregate
 
 ### 3. **Flow Diagram**
 
-```plaintext
                +-------------------+
                |  Fitness Agent    |  
                |  (Processes data  | 
@@ -113,5 +112,3 @@ In the current design, no relational database is required since the data is prov
 - **AI Integration**: Implementing more sophisticated AI models for deeper insights (e.g., predictive health analytics, more advanced sentiment analysis).
 - **Mobile App Version**: Adapting the dashboard for mobile use to allow users to track their progress on the go.
 ```
-
----
