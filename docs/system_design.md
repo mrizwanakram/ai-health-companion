@@ -1,5 +1,3 @@
-
-```markdown
 # System Design - Mind-Body Connection Dashboard
 
 ## Overview
@@ -27,9 +25,7 @@ The Mind-Body Connection Dashboard is a comprehensive tool designed to aggregate
    - **Insights Aggregation** (`insights/aggregation.py`): Combines the outputs of the fitness, sleep, and sentiment agents into a single set of insights, including personalized suggestions.
    - **Dashboard** (`dashboard/dashboard.py`): The central component that integrates the insights and displays them in a Streamlit dashboard. This also includes custom styling to ensure a visually appealing and interactive user experience.
 
-
 ### 3. **Technologies Used**
-
 - **Python 3.x**: The primary programming language.
 - **Streamlit**: Used for building the interactive dashboard.
 - **JSON**: The format for storing fitness, journal, and sleep data.
@@ -77,4 +73,3 @@ In the current design, no relational database is required since the data is prov
 - **Database Integration**: Switching from static JSON files to a database for more dynamic, scalable data storage.
 - **AI Integration**: Implementing more sophisticated AI models for deeper insights (e.g., predictive health analytics, more advanced sentiment analysis).
 - **Mobile App Version**: Adapting the dashboard for mobile use to allow users to track their progress on the go.
-```
