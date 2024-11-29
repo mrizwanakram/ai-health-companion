@@ -1,14 +1,20 @@
-class SleepAgent:
-    def analyze_sleep(self, metrics):
-        sleep_insights = []
-        for data in metrics:  # Iterate over the list of metrics
-            # Ensure data is a dictionary with keys like 'sleep_hours'
-            sleep_hours = data['sleep_hours']
-            
-            # Example logic for sleep insights
-            if sleep_hours < 7:
-                sleep_insights.append("Try to aim for at least 7-8 hours of sleep for better health.")
-            if sleep_hours > 9:
-                sleep_insights.append("Consider reducing sleep hours for optimal daytime performance.")
-            
-        return sleep_insights
+import numpy as np
+
+def sleep_analysis(metrics):
+    """
+    Analyze sleep data to detect patterns and provide suggestions.
+    Args:
+        metrics (list): List of dictionaries containing sleep data.
+    Returns:
+        dict: Insights and recommendations for sleep.
+    """
+    avg_sleep = np.mean([day['sleep_hours'] for day in metrics])
+    suggestion = (
+        "You're getting enough sleep. Keep it up!"
+        if avg_sleep >= 7
+        else "Consider improving your sleep routine to get at least 7 hours per night."
+    )
+    return {
+        "average_sleep_hours": avg_sleep,
+        "suggestion": suggestion,
+    }
