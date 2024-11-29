@@ -6,8 +6,8 @@ A dashboard integrating fitness, sleep, and journaling data to provide actionabl
 ## Setup Instructions
 1. Clone the repository:
     ```bash
-    git clone <repo-url>
-    cd mind_body_dashboard
+    git clone git@github.com:mrizwanakram/ai-health-companion.git
+    cd ai-health-companion
     ```
 2. Install dependencies:
     ```bash
