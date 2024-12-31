@@ -14,3 +14,12 @@ def sentiment_analysis(journal_entries):
     negative_count = len(sentiments) - positive_count
 
 
+    return {
+        "positive_entries": positive_count,
+        "negative_entries": negative_count,
+        "suggestion": (
+            "Most of your entries are positive. Keep up the good vibes!"
+            if positive_count > negative_count
+            else "You seem to be facing challenges. Consider mindfulness practices."
+        ),
+    }
